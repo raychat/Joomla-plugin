@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.5" method="upgrade">
+        <name>Raychat</name>
+        <creationDate>July 2017</creationDate>
+        <author>raychat</author>
+        <authorEmail>info@raychat.com</authorEmail>
+        <authorUrl>https://raychat.io</authorUrl>
+        <copyright>raychat inc</copyright>
+        <license>License Info</license>
+        <version>0.1</version>
+        <description>This module will install the chat code on your website</description>
+        <files>
+                <filename module="mod_raychat">mod_raychat.php</filename>
+                <filename module="mod_raychat">mod_raychat.xml</filename>
+        </files>
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="a" type="note" default="" label="1. ورود به پنل اپراتوری" description="https://app.raychat.io" />
+                <field name="b" type="note" default="" label="2. شخصی سازی ابزارک یا مدیریت اپراتور ها از طریق پنل مدیریت" description="بعد از نصب و فعال سازی ابزارک برای هر چه بهتر مدیریت کردن اپراتور ها و شخصی سازی ابزارک میتوانید از طریق پنل مدیریت اقدام کنید" />
+                <field name="c" type="note" default="default" label=" " description="https://raychat.io/login" />
+                <field name="d" type="note" default="default" label=" " description="" />
+                <field name="chatcode" type="text" default="" label="Widget ID" description="insert the Widget ID from the chat code here" size="30" />
+                <field name="e" type="note" default="default" label=" " description="" />
+                <field name="mytextvalue" type="note" label="" class="alert alert-success" description="برای ویرایش و دریافت توکن به تنظیمات کانال مراجعه کنید." size="10" />
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>
